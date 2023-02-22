@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import { TopBar } from './components/topbar';
 import { SideBar } from './components/sidebar';
+import { MiningScreen } from './screens/miningscreen';
+import { CraftingScreen } from './screens/craftingscreen';
 
 
 
@@ -31,9 +33,14 @@ function App() {
         </div>
 
         <div className='MainContentArea'>
+        {
+          {
+            'mining': <MiningScreen />,
+            'crafting': <CraftingScreen />
+          }[screen]
+        }
 
         </div>
-
         <div className='LogArea'>
 
         </div>
