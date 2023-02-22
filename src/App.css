@@ -1,6 +1,53 @@
 .App {
   text-align: center;
+  background-color: aliceblue;
+  height: 100vh;
+  min-width: 100vh;
+  padding-top: 5vh;
 }
+
+.AppContainer {
+  width: 90%;
+  height: 90%;
+  background-color: bisque;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 5;
+  grid-template-rows: 20;
+
+}
+
+.TopBar {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.SideBar {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 18;
+  background-color: aqua;
+}
+
+.MainContentArea {
+  grid-row-start: 2;
+  grid-row-end: 18;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  background-color: red;
+}
+
+.LogArea {
+  grid-row-start: 2;
+  grid-row-end: 18;
+  grid-column-start: 5;
+  grid-column-end: 5;
+  background-color: green;
+}
+
 
 .App-logo {
   height: 40vmin;
